@@ -12,7 +12,7 @@ namespace AdventOfCode
 		public String[] ReadElfFile()
 		{
 			String elfText = "";
-			using (StreamReader sr = new StreamReader("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\elfFile.txt"))
+			using (StreamReader sr = new("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\elfFile.txt"))
 			{
 				elfText = sr.ReadToEnd();
 			}

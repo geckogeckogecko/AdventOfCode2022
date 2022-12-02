@@ -6,10 +6,10 @@ namespace AdventOfCOde
 	{
 		static void Main()
 		{
-			Day1 dayOne = new Day1();
-			String[] elfList = dayOne.ReadElfFile();
-			int highestSum = dayOne.ProcessElfList(elfList);
-			Console.WriteLine(highestSum);
+			Day2 day2 = new();
+			String[] RPSList = day2.ReadRPS();
+			int total = day2.TotalScore(RPSList);
+			Console.WriteLine(total);
 		}
 	}
 }
