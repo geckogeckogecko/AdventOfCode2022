@@ -9,14 +9,6 @@ namespace AdventOfCode
 	public class Day2
 	{
 		public Day2() { }
-		public String[] ReadRPS()
-		{
-			String rpsText = "";
-			using (StreamReader sr = new("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\RPSFile.txt")){
-				rpsText = sr.ReadToEnd();
-			}
-			return rpsText.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
-		}
 
 		public int IndivScore(String round)
 		{

@@ -9,27 +9,15 @@ namespace AdventOfCode
 	public class Day1
 	{
 		public Day1() { }
-		public String[] ReadElfFile()
-		{
-			String elfText = "";
-			using (StreamReader sr = new("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\elfFile.txt"))
-			{
-				elfText = sr.ReadToEnd();
-			}
-			String[] elfList = elfText.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
-			return elfList;
-		}
 
-		public int ProcessElfList(String[] elfList)
+		public static int ProcessElfList(String[] elfList)
 		{
-			Boolean reachedNull = false;
-			String currentString = "";
 			int[] highestThree = { 0, 0, 0 };
 			int currentSum = 0;
-			int highestSum = 0;
 			for (int i = 0; i < elfList.Length; i++)
 			{
-				currentString = elfList[i];
+				string currentString = elfList[i];
+				bool reachedNull;
 				if (currentString == "")
 				{
 					reachedNull = true;
@@ -65,7 +53,7 @@ namespace AdventOfCode
 			int totalSum = 0;
 			for (int u = 0; u < 3; u++)
 			{
-				totalSum = totalSum + highestThree[u];
+				totalSum += highestThree[u];
 			}
 			return totalSum;
 		}
