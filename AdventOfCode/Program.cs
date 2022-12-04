@@ -6,9 +6,9 @@ namespace AdventOfCOde
 	{
 		static void Main()
 		{
-			Day3 day3 = new Day3();
-			String[] ruckSackList = SplitFileIntoLines("C:\\Users\\lorna\\OneDrive\\Documents\\Documents\\Coding\\AdventOfCode\\rucksacks.txt");
-			Console.WriteLine(day3.SumOfAllRucksackGroups(ruckSackList));
+			Day4 day4 = new Day4();
+			String[] cleaningList = SplitFileIntoLines("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\cleaningList.txt");
+			Console.WriteLine(day4.GoThroughList(cleaningList));
 		}
 
 		public static String[] SplitFileIntoLines(string file)
