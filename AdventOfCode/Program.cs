@@ -1,4 +1,5 @@
 ﻿using AdventOfCode;
+using System.Text;
 
 namespace AdventOfCOde
 {
@@ -6,12 +7,12 @@ namespace AdventOfCOde
 	{
 		static void Main()
 		{
-			Day4 day4 = new Day4();
-			String[] cleaningList = SplitFileIntoLines("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\cleaningList.txt");
-			Console.WriteLine(day4.GoThroughList(cleaningList));
+			Day5 day5 = new Day5();
+			string[] list = SplitFileIntoLines("C:\\Users\\Lorna\\Documents\\Coding\\AdventOfCode\\crateFile.txt");
+			Console.WriteLine(day5.GoThroughList(list));
 		}
 
-		public static String[] SplitFileIntoLines(string file)
+		public static string[] SplitFileIntoLines(string file)
 		{
 			String fileText = "";
 			using (StreamReader sr = new(file))
